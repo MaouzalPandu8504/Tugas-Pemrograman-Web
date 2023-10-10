@@ -1,18 +1,105 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Learn HTML</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="ico/x-image" href="D:\Code\favicon.ico">
+        <title>Belajar HTML</title>
+        <style>
+            body {
+                font-family:'Segoe UI';
+                margin: 0px;
+            }
+            table, tr, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            td {
+                padding: 10px;
+                text-align: center;
+            }
+            tr:nth-child(even) {  
+                background-color: rgb(230, 230, 230);
+            }
+            .form-container {
+                border: 1px solid black;
+                display: flex;
+                flex-direction: column;  
+                align-items: center;
+                padding: 20px;
+                width: 240px;
+                margin: 0 auto;
+            }
+        </style>
     </head>
     <body>
-        <img src="https://t4.ftcdn.net/jpg/05/69/43/37/360_F_569433764_F1D6wEyYmVPC8TwfNXkNHGK5ul0Syxnn.jpg">
-        <div style="text-align:center;">
-            <a href="https://stock.adobe.com/search?k=turtle+trash&asset_id=569433764" alt="click this text to see the source" style="color:white;" target="_blank">Gambar 1.1 Kura-kura terjerat limbah plastic</a>
+        <div style="position: fixed;top: 0; left: 0; right: 0; background-color: rgb(41, 95, 255); height: 50px; margin-bottom: 27px;">
+            <p style="padding-left:20px; font-size: larger;"><strong>Belajar HTML</strong></p>
         </div>
-        
-        <h2>Dampak Membuang Sampah di Lautan</h2>
-        <p>Penumpukan sampah menjadi permasalahan penting yang terjadi di suatu negara. Kurangnya kesadaran masyarakat untuk membuang sampah pada tempatnya merupakan kebiasaan buruk yang memicu meningkatnya penumpukan sampah, <mark>sehingga berakibat pada pencemaran lingkungan terutama pada wilayah perairan.</mark></p>
-        <p><mark>Dampaknya adalah terganggunya ekologi dan ekonomi bagi perairan tawar dan perairan laut.</mark> Sampah plastik tersebut jika terus dibiarkan juga dapat membahayakan hewan atau biota laut. Banyak kasus yang ditemukan yakni sekitar 370 spesies hewan laut ditemukan terjerat atau menelan sampah laut yang berasal dari seluruh dunia, mulai dari penyu, anjing laut, burung laut dan beberapa biota lainnya.</p>
+        <div style="text-align:center; margin-top: 60px">
+            <!-- Arahkan kursor ke gambar, gambar akan menampilkan deskripsi dari foto tersebut-->
+            <img src="https://t4.ftcdn.net/jpg/05/69/43/37/360_F_569433764_F1D6wEyYmVPC8TwfNXkNHGK5ul0Syxnn.jpg" 
+            style="border: 4px solid transparent; margin-left: auto; margin-right: auto; display:block;" 
+            title="Kura-Kura dan Limbah Plastik">
+            <p style="color:gray">Kura-Kura dan Limbah Plastik 
+                <a href="https://stock.adobe.com/search?k=turtle+trash&asset_id=569433764" 
+                    target="_blank" 
+                    style="color:gray">(https://stock.adobe.com/search?k=turtle+trash&asset_id=569433764)
+                </a>
+            </p>
+        </div>
+        <div style="margin-left:17%; margin-right:17%;">
+            <h1>
+                Sampah Plastik di Lautan Indonesia
+            </h1>
+            <p style="text-indent: 20px;">
+                Indonesia merupakan negara penghasil sampah plastik laut terbesar kedua di dunia. 
+                Menurut Penelitian dari UC Davis dan Universitas Hasanuddin yang dilakukan di pasar Paotere Makassar menunjukkan 23% sampel ikan yang diambil memiliki kandungan plastik di perutnya. 
+                Namun bagaimana bisa? salah satu penyebabnya adalah masyarakat Indonesia yang masih membuang sampah sembarangan, seolah-olah sudah menjadi sebuah tradisi. 
+                Berikut data-data sampah plastik yang ada di lautan Indonesia.
+            </p>
+            <br>
+            <table style="width: 75%; margin-left: auto; margin-right:auto; font-weight:bolder;">
+                <caption style="font-size: larger; margin-bottom: 10px;">Data Sampah Plastik di Lautan Indonesia</caption>
+                <tr>
+                    <th>Tahun</th>
+                    <th>Ton</th>
+                </tr>
+                <tr>
+                    <td>2018</td>
+                    <td>615.674</td>
+                </tr>
+                <tr>
+                    <td>2019</td>
+                    <td>566.074</td>
+                </tr>
+                <tr>
+                    <td>2020</td>
+                    <td>521.540</td>
+                </tr>
+                <tr>
+                    <td>2021</td>
+                    <td>440.106</td>
+                </tr>
+                <tr>
+                    <td>2022</td>
+                    <td>398.000</td>
+                </tr>
+            </table>
+            <br><br>
+            <p style="text-indent: 20px;">
+            Padahal apabila masyarakat dapat mengolah sampah-sampah tersebut, sampah-sampah tersebut dapat menjadi barang-barang baru yang memiliki mutu.
+            Lalu bagaimana pemerintah menyelesaikan masalah ini? pemerintah sudah menerapkan berbagai upaya untuk mengurangi penggunaan plastik seperti mengolah sampah menjadi bahan bakar minyak (BBM) yand ada di Bali,
+            dan fasilitas suroboyo bus dimana kita dapat menukarkan sampah dengan tiket bus.
+            </p>
+            <br>
+            <div class="form-container">
+                    <form>
+                        <label for="email">Email</label>
+                        <br>
+                        <input type="text" id="email" name="email">
+                        <br>
+                        <br>
+                        <input type="submit" value="submit">
+                    </form>
+            </div>
+        </div> 
     </body>
 </html>
